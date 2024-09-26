@@ -349,7 +349,7 @@ a.nav__logo img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color:#527527;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -373,19 +373,111 @@ a.nav__logo img {
 
 
 .recent-accol li {
-  list-style: circle;
   line-height: 1.5;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
 }
 .about_head{
   margin: 5px 5px;
 }
-ul.recent-accol {
-  padding: 0 25px;
-}
+
 .about__subtitle,
 .about_head{
   color:var(--third-color);
 }
+span.arr img {
+  width: 20px;
+}
+span.arr{
+  display:inline-block;
+  padding-right: 5px;
+}
+.text-blue{
+  color:var(--first-color);
+}
+.call_btn{
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+}
+.call_btn img{
+  width:50px;
+}
+.footer__social a img {
+  width: 35px;
+  margin: 0 auto;
+}
+.footer__social a{
+  display: inline-block;
+}
+.footer__social span{
+  font-size: 14px;
+}
+.rel-cnt{
+  position:relative;
+}
+.ab-cnt{
+  position: absolute;
+  content:'';
+  bottom: 0px;
+  background: #1610d6b5;
+  width: 100%;
+  padding: 10px 5px;
+  color:#fff;
+}
+.swiper-button-next::after,.swiper-button-prev::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem !important; 
+    font-weight: 800;
+    padding: 1rem;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.75;
+    border-radius: 50%;
+    background:var(--first-color);
+    color:#fff;
+  }
+  .swiper-pagination-bullet{
+    background:var(--first-color) !important;
+    display:none;
+  }
+  .columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  .column {
+    flex: 1;
+    border: 1px solid gray;
+    margin: 2px;
+    padding: 10px;
+  }
+    .column :first-child { margin-left: 0; }
+    .column :last-child { margin-right: 0; }
+    
+  
+  
+  
+  @media screen and (max-width: 980px) {
+    .columns .column {
+      margin-bottom: 5px;
+      flex-basis: 40%;
+    }
+      .columns .column:nth-last-child(2) {
+        margin-right: 0;
+      }
+      .columns .column :last-child {
+        flex-basis: 100%;
+        margin: 0;
+      }
+    
+  }
+  
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
@@ -473,7 +565,7 @@ ul.recent-accol {
   }
   .home__img {
     width: 400px;
-    bottom: 15%;
+    bottom: 8%;
   }
   .about__container {
     padding-top: 2rem;
@@ -498,7 +590,7 @@ ul.recent-accol {
     margin-right: auto;
   }
   .home {
-    padding: 7.5rem 0 2rem;
+    padding: 10rem 0 2rem;
   }
   .home__img {
     width: 450px;
